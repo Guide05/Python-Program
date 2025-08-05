@@ -36,6 +36,6 @@ def main():
     except ValueError:
         print("Error: Please enter valid numbers.")
 
-# Run the main function
+# Run the main function for confirmation
 if __name__ == "__main__":
     main()
