@@ -1,6 +1,4 @@
 # Simple Calculator Program
-
-# Function to perform the chosen operation
 def calculate(num1, num2, operation):
     if operation == '+':
         return num1 + num2
@@ -16,15 +14,15 @@ def calculate(num1, num2, operation):
     else:
         return "Error: Invalid operation."
 
-# Main function to run the calculator
+# Function to run the calculator(ROOT)
 def main():
-    # Ask the user for input
+    # Asking the user for inputs
     try:
         num1 = float(input("Enter the first number: "))  # First number
         num2 = float(input("Enter the second number: "))  # Second number
         operation = input("Enter the operation (+, -, *, /): ")  # Operation
 
-        # Perform the calculation
+        # Function to perform the calculation
         result = calculate(num1, num2, operation)
 
         # Display the result
