@@ -22,3 +22,16 @@ print("Text in Uppercase:", content_data)
 file = open('output.txt', 'w')
 file.write(content_data)
 file.write(f'\n The number of words in the file input.txt is: {word_count}n')
+
+#Printing a success message after the files are created
+# this also includes error handling
+try:
+    file = open('newFile.txt', 'r')
+    data = file.read()
+    print(data)
+except FileNotFoundError:
+    print("File not found.")
+
+finally:
+    print("Program successfully executed. Thank You")
+    file.close
